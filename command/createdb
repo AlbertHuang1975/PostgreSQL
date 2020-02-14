@@ -1,0 +1,3 @@
+C:\Program Files\PostgreSQL\12\bin>createdb -h localhost -p 5432 -U postgres runoobdb
+їЪБо:
+
