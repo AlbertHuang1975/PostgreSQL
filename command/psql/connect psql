@@ -1,0 +1,20 @@
+C:\Program Files\PostgreSQL\12\bin>psql -U postgres -d mydb
+用户 postgres 的口令：
+mydb=# select current_database();
+ current_database
+------------------
+ mydb
+(1 行记录)
+
+
+C:\Program Files\PostgreSQL\12\bin>psql -U postgres
+用户 postgres 的口令：
+postgres=# select current_database();
+ current_database
+------------------
+ postgres
+(1 行记录)
+
+
+C:\Program Files\PostgreSQL\12\bin>psql
+用户 MI 的口令：  <--- default user is user of computer
