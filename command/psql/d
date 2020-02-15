@@ -1,0 +1,19 @@
+postgres=# \d
+                关联列表
+ 架构模式 |   名称   |  类型  |  拥有者
+----------+----------+--------+----------
+ public   | cities   | 数据表 | postgres
+ public   | weather  | 数据表 | postgres
+ public   | weather1 | 数据表 | postgres
+(3 行记录)
+
+
+postgres=# \d weather;
+                  数据表 "public.weather"
+  栏位   |         类型          | 校对规则 | 可空的 | 预设
+---------+-----------------------+----------+--------+------
+ city    | character varying(80) |          |        |
+ temp_lo | integer               |          |        |
+ temp_hi | integer               |          |        |
+ prcp    | real                  |          |        |
+ date    | date                  |          |        |
