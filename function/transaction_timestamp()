@@ -1,0 +1,5 @@
+postgres=# select transaction_timestamp();
+     transaction_timestamp
+-------------------------------
+ 2020-02-15 18:24:55.071565+08
+(1 ÐÐ¼ÇÂ¼)

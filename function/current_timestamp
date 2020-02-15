@@ -1,0 +1,5 @@
+postgres=# select CURRENT_TIMESTAMP;
+       current_timestamp
+-------------------------------
+ 2020-02-15 18:23:23.748463+08
+(1 ÐÐ¼ÇÂ¼)
