@@ -1,11 +1,3 @@
 C:\Program Files\PostgreSQL\12\bin>createdb -h localhost -p 5432 -U postgres runoobdb
 口令:
 
-postgres=# create database mydb;
-CREATE DATABASE
-
-查看数据库
-postgres=# \l
-
-选择数据库，
-\c mydb;
