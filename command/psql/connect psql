@@ -17,4 +17,4 @@ postgres=# select current_database();
 
 
 C:\Program Files\PostgreSQL\12\bin>psql
-用户 MI 的口令：  <--- default user is user of computer
+用户 MI 的口令：  <--- default user is  computer's user
