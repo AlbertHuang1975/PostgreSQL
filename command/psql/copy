@@ -1,2 +1,11 @@
 postgres=# copy COMPANY to 'c:\test\company.csv' delimiter ',' csv header;
 COPY 3
+
+postgres=# copy (SELECT * FROM COMPANY WHERE NAME='Paul') to 'c:\test\company1.csv' delimiter ',' csv header;
+COPY 1
+
+postgres=# copy COMPANY from 'c:\test\company.csv' delimiter ',' csv header;
+COPY 3
+
+
+copy (SELECT * FROM COMPANY WHERE NAME='Paul') to 'c:\test\company1.csv' delimiter ',' csv header;
