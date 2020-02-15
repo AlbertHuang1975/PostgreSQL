@@ -1,0 +1,5 @@
+postgres=# select current_date;
+ current_date
+--------------
+ 2020-02-15
+(1 ÐÐ¼ÇÂ¼)
