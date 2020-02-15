@@ -1,0 +1,5 @@
+mydb=# select session_user;
+ session_user
+--------------
+ postgres
+(1 ÐÐ¼ÇÂ¼)

@@ -1,0 +1,12 @@
+mydb=# select current_user;
+ current_user
+--------------
+ postgres
+(1 行记录)
+
+
+mydb=# select current_schema();
+ current_schema
+----------------
+ public
+(1 行记录)
