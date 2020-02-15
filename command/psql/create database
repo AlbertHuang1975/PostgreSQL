@@ -1,0 +1,2 @@
+postgres=# create database mydb;
+CREATE DATABASE

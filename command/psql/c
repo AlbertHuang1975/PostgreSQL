@@ -1,0 +1,15 @@
+runoobdb=# select current_database();
+ current_database
+------------------
+ runoobdb
+(1 行记录)
+
+
+runoobdb=# \c mydb
+您现在已经连接到数据库 "mydb",用户 "postgres".
+
+mydb=# select current_database();
+ current_database
+------------------
+ mydb
+(1 行记录)
