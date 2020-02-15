@@ -1,0 +1,2 @@
+postgres=# copy COMPANY to 'c:\test\company.csv' delimiter ',' csv header;
+COPY 3
