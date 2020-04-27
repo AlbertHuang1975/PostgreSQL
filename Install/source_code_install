@@ -24,7 +24,7 @@ make
 make install
 
 --创建目录 mkdir /usr/local/pg12.2/data 
---初始化数据库集簇 initdb -D $PGDATA –w --data-checksums –复制时需要 
+--初始化数据库集簇 initdb -D $PGDATA –W --data-checksums –复制时需要 
 --启动数据库集簇 pg_ctl -D $PGDATA -l logfile start 
 --创建新的数据库 createdb test 
 --登录数据库 psql test CUUG 
