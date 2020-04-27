@@ -1,0 +1,30 @@
+[root@localhost ~]# groupadd postgres
+[root@localhost ~]# useradd -g postgres postgres
+[root@localhost ~]# mkdir -p /usr/local/pg12.2
+[root@localhost ~]# chown postgres:postgres /usr/local/pg12.2/
+[root@localhost ~]# chmod 775 /usr/local/pg12.2
+最小依赖：gcc、gcc-c++、zlib-devel、readline-devel
+其他依赖：perl-ExtUtils-Embed、pam-devel、libxml2-devel、libxsltdevel、
+         openldap-devel、python-devel、openssl-devel、cmake 
+[root@localhost ~]# dnf install -y gcc
+[root@localhost ~]# dnf install -y gcc-c++
+[root@localhost ~]# dnf install -y zlib-devel
+[root@localhost ~]# dnf install -y readline-devel
+[root@localhost ~]#su - postgres
+[postgres@localhost ~]$ vi .bash_profile
+export PGPORT=1922 
+export PG_HOME=/usr/local/pg12.2 
+export PATH=$PG_HOME/bin:$PATH 
+export PGDATA=$PG_HOME/data 
+export LD_LIBRARY_PATH=$PG_HOME/lib 
+export LANG=en_US.utf8 
+cd /soft/postgresql-12.2
+./configure  --prefix=/usr/local/pg12.2
+make
+make install
+
+--创建目录 mkdir /usr/local/pg12.2/data 
+--初始化数据库集簇 initdb -D $PGDATA –w --data-checksums –复制时需要 
+--启动数据库集簇 pg_ctl -D $PGDATA -l logfile start 
+--创建新的数据库 createdb test 
+--登录数据库 psql test CUUG 
